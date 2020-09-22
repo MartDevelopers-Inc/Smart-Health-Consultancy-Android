@@ -1,36 +1,34 @@
 package com.martdevelopersinc.droidnatifier;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Menu;
-//import android.view.MenuItem;
 import android.webkit.WebSettings;
-import  android.webkit.WebView;
+import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class MainActivity extends AppCompatActivity {
-    private WebView Doctor_Login;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ClientLogin extends AppCompatActivity {
+    private WebView Client_Login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_client_login);
 
-        Doctor_Login = (WebView)findViewById(R.id.DocLogIn);
-        WebSettings webSettings = Doctor_Login.getSettings();
+        Client_Login = (WebView)findViewById(R.id.ClientLogin);
+        WebSettings webSettings = Client_Login.getSettings();
 
         webSettings.setJavaScriptEnabled(true);
-        Doctor_Login.setWebViewClient(new WebViewClient());
+        Client_Login.setWebViewClient(new WebViewClient());
 
-        //Load URL To Doctors Login Here
-        Doctor_Login.loadUrl("");
+        //Load URL To Client Login Panel Here
+        Client_Login.loadUrl("");
     }
-
     @Override
     public void onBackPressed() {
-        if(Doctor_Login.canGoBack()) {
-            Doctor_Login.goBack();
+        if(Client_Login.canGoBack()) {
+            Client_Login.goBack();
         } else {
             super.onBackPressed();
         }
@@ -42,7 +40,4 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-
-
 }

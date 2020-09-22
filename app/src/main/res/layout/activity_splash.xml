@@ -8,15 +8,16 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="253dp"
-        android:layout_height="350dp"
+        android:layout_width="457dp"
+        android:layout_height="673dp"
         android:contentDescription="@string/todo"
-        android:src="@drawable/logo"
+        android:src="@drawable/smart"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <TextView
         android:id="@+id/textView"
