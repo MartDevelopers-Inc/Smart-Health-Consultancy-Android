@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         Doctor_Login = (WebView)findViewById(R.id.DocLogIn);
         WebSettings webSettings = Doctor_Login.getSettings();
 
-        webSettings.setJavaScriptEnabled(false);
+        webSettings.setJavaScriptEnabled(true);
         Doctor_Login.setWebViewClient(new WebViewClient());
 
         //Load URL To Doctors Login Here
-        Doctor_Login.loadUrl("");
+        Doctor_Login.loadUrl("172.16.4.109/SHC/");
     }
 
     @Override

@@ -40,7 +40,7 @@ public class OptionsActivity extends AppCompatActivity {
     }
 
     public void logInClient(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ClientLogin.class);
         startActivity(intent);
     }
 }

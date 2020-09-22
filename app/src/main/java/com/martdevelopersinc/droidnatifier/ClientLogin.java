@@ -19,11 +19,11 @@ public class ClientLogin extends AppCompatActivity {
         Client_Login = (WebView)findViewById(R.id.ClientLogin);
         WebSettings webSettings = Client_Login.getSettings();
 
-        webSettings.setJavaScriptEnabled(false);
+        webSettings.setJavaScriptEnabled(true);
         Client_Login.setWebViewClient(new WebViewClient());
 
         //Load URL To Client Login Panel Here
-        Client_Login.loadUrl("");
+        Client_Login.loadUrl("172.16.4.109/SHC/");
     }
     @Override
     public void onBackPressed() {
