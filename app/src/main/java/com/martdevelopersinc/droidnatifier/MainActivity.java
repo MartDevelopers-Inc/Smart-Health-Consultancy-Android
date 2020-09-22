@@ -10,26 +10,27 @@ import  android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
-    private WebView natifier;
+    private WebView Doctor_Login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        natifier = (WebView)findViewById(R.id.natifier);
-        //WebView devlanWebView = (WebView) findViewById(R.id.devlan);
-        WebSettings webSettings = natifier.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        natifier.setWebViewClient(new WebViewClient());
-        //myWebView.setWebViewClient(new WebViewClient());
-        //Enter your url Here
-        natifier.loadUrl("https://martdev.info");
+
+        Doctor_Login = (WebView)findViewById(R.id.DocLogIn);
+        WebSettings webSettings = Doctor_Login.getSettings();
+
+        webSettings.setJavaScriptEnabled(false);
+        Doctor_Login.setWebViewClient(new WebViewClient());
+
+        //Load URL To Doctors Login Here
+        Doctor_Login.loadUrl("");
     }
 
     @Override
     public void onBackPressed() {
-        if(natifier.canGoBack()) {
-            natifier.goBack();
+        if(Doctor_Login.canGoBack()) {
+            Doctor_Login.goBack();
         } else {
             super.onBackPressed();
         }

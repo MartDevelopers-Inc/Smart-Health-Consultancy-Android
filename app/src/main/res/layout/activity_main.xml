@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <WebView
-        android:id="@+id/natifier"
+        android:id="@+id/DocLogIn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="194dp"
