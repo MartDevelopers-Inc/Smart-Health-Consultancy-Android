@@ -23,7 +23,7 @@ public class ClientLogin extends AppCompatActivity {
         Client_Login.setWebViewClient(new WebViewClient());
 
         //Load URL To Client Login Panel Here
-        Client_Login.loadUrl("https://wcf.co.ke");
+        Client_Login.loadUrl("");
     }
     @Override
     public void onBackPressed() {

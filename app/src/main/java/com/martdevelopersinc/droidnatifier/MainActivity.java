@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Doctor_Login.setWebViewClient(new WebViewClient());
 
         //Load URL To Doctors Login Here
-        Doctor_Login.loadUrl("https://wcf.co.ke");
+        Doctor_Login.loadUrl("");
     }
 
     @Override
